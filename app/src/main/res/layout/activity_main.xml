@@ -1,0 +1,59 @@
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragSuma"
+            tools:layout="@layout/fragment_suma"
+            android:layout_weight="1"
+            android:name="com.example.practicafragmentosoperacionesbasica.suma"/>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragResta"
+            tools:layout="@layout/fragment_resta"
+            android:layout_weight="1"
+            android:name="com.example.practicafragmentosoperacionesbasica.resta"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragMulti"
+            tools:layout="@layout/fragment_multiplicacion"
+            android:layout_weight="1"
+            android:name="com.example.practicafragmentosoperacionesbasica.multiplicacion"/>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragDiv"
+            tools:layout="@layout/fragment_divicion"
+            android:layout_weight="1"
+            android:name="com.example.practicafragmentosoperacionesbasica.divicion"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
